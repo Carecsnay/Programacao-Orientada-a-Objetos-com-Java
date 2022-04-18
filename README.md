@@ -1,3 +1,5 @@
+# [Em atualização] - [Toda segunda conteúdo novo!]
+
 # Programa-o-Orientada-a-Objetos-com-Java
 20221.1.BRT023.1E.FIC.00651 (BRT-JAVA) 297975
 
