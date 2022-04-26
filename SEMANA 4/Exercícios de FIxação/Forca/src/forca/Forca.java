@@ -22,7 +22,7 @@ public class Forca {
                 }
             }
 
-            System.out.println("\n\nVidas Restantes = "+vidas+", Digite uma letra: ");
+            System.out.print("\nVidas Restantes = "+vidas+", Digite uma letra: ");
             String letraDigitada = sc.next();
 
             if (!letraDigitada.matches("[a-z]|[A-Z]")) { //verifica se é uma letra! MAIUSC ou minusc.
@@ -37,6 +37,6 @@ public class Forca {
             }
             palpites += letraDigitada;
         }
-        System.out.println("Game Over!");
+        System.out.println("\nGame Over!");
     }
 }
