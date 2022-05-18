@@ -28,7 +28,7 @@ public class A06t01 {
         System.out.println(getNomes(codigo));
     }
 
-    private static List<String> getNomes(int codigo) {
+    private static List<String> getNomes(int dado) {
         List<String> nome1 = new ArrayList<>();
         nome1.add("Bruno");
 
@@ -38,7 +38,7 @@ public class A06t01 {
         List<String> nome3 = new ArrayList<>();
         nome3.add("Leon");
 
-        switch (codigo) {
+        switch (dado) {
             case 1:
                 return nome1;
             case 2:
@@ -48,7 +48,7 @@ public class A06t01 {
             default:
                 System.out.println("Escolha entre 1 e 3.");
         }
-        return getNomes(codigo);
+        return getNomes(dado);
     }
 }
 
