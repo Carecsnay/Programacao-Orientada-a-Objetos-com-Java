@@ -3,6 +3,7 @@ package a06t05;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
+import javax.swing.JOptionPane;
 
 /*
 
@@ -13,49 +14,26 @@ import java.util.Scanner;
 public class A06t05 {
 
     /**
-     * Crie um método que receba como parâmetro o dia da semana em formato inteiro e retorne o nome do dia (segunda-feira, terça-feira etc);
+     * Crie uma sobrecarga para cada método do exercício anterior, para receber também o tipo da mensagem que será exibida: 1 para mensagem em texto e 2 para mensagem gráfica;
      */
     public static void main(String[] args) {
-
+        int i = 1;
         Scanner sc = new Scanner(System.in);
 
         System.out.print("Escolha de 1 a 7 para retornar um dia da semana: ");
-
         int codigo = sc.nextInt();
 
-        System.out.println(diaSemana(codigo));
-    }
+        System.out.println("Digite a opção de exibição do texto:");
+        System.out.println("["+i+++"] Via prompt");
+        System.out.println("["+ i+++"] Via interface gŕafica");
+        int opcao = sc.nextInt();
 
-    private static String diaSemana(int codigoInserido) { 
-        List<String> dias = new ArrayList<>() ;
-        dias.add("Domingo");
-        dias.add("Segunda-Feira");
-        dias.add("Terça-Feira");
-        dias.add("Quarta-Feira");
-        dias.add("Quinta-Feira");
-        dias.add("Sexta-Feira");
-        dias.add("Sábado");
-                
-        System.out.print("Convertendo...o dia escolhido foi: ");
-        
-        switch (codigoInserido) {
-            case 1:
-                return dias.get(0);
-            case 2:
-                return dias.get(1);
-            case 3:
-                return dias.get(2);
-            case 4:
-                return dias.get(3);
-            case 5:
-                return dias.get(4);
-            case 6:
-                return dias.get(5);
-            case 7:
-                return dias.get(6);
-            default:
-                System.out.println("Opção inválida!");
+        if (opcao == 1) {
+            imprimir(diaSemana(codigo), codigo);
         }
-        return diaSemana(codigoInserido);
-    }
+        
+        else {
+            imprimir(diaSemana(codigo));
+        }
+    }  
 }

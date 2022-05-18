@@ -27,6 +27,6 @@ public class A06t02 {
     }
 
     private static int maiorNumero(int num1, int num2) {
-        return Integer.max(num2, num2);
+        return Integer.max(num1, num2);
     }
 }

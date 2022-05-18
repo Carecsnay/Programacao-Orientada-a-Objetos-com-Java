@@ -18,7 +18,6 @@ public class A06ex01 {
     private static void latir () {
         System.out.println("Au");
     }
-    
     private static void mugir () {
         System.out.println("Muuuu");
     }
